@@ -2,7 +2,10 @@
 #'
 #' Obtain percentage of simulated data set leading to incorrect rejection of H0
 #' @param results_list list of results
+#' @param true_theta true value of theta for evaluation
 #' @return test size
+#' @importFrom stats pnorm
+#' @importFrom stats predict
 #' @export
 
 get_testSize <- function(results_list, true_theta = log(1)) {

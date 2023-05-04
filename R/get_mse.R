@@ -2,6 +2,7 @@
 #'
 #' Obtain MSE treatment effect estimates
 #' @param results_list list of results
+#' @param true_theta true value of theta for evaluation
 #' @return theta MSE
 #' @export
 

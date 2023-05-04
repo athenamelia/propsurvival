@@ -8,6 +8,8 @@ get_mse(results_list, true_theta = log(1))
 }
 \arguments{
 \item{results_list}{list of results}
+
+\item{true_theta}{true value of theta for evaluation}
 }
 \value{
 theta MSE

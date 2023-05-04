@@ -1,7 +1,8 @@
 #' Generate Monte Carlo simulation
 #'
 #' Generate 10,000 simulated data set, fit survival models and return estimates
-#' @param num.iter number of iterations 
+#' @param num.iter number of iterations
+#' @param beta0 for treatment effect generation; determines imbalance level
 #' @return Monte Carlo simulation estimates
 #' @export
 

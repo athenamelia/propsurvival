@@ -7,7 +7,7 @@
 fit_models(data)
 }
 \arguments{
-\item{o.data}{original sample}
+\item{data}{original sample}
 }
 \value{
 Model estimates

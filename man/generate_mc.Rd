@@ -4,10 +4,12 @@
 \alias{generate_mc}
 \title{Generate Monte Carlo simulation}
 \usage{
-generate_mc(num.iter = 10000)
+generate_mc(num.iter = 10000, beta0 = -3.45)
 }
 \arguments{
 \item{num.iter}{number of iterations}
+
+\item{beta0}{for treatment effect generation; determines imbalance level}
 }
 \value{
 Monte Carlo simulation estimates

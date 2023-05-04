@@ -1,7 +1,7 @@
 #' Model fitting
 #'
 #' Fit several survival models and return estimates
-#' @param o.data original sample
+#' @param data original sample
 #' @return Model estimates
 #' @export
 
@@ -55,12 +55,12 @@ fit_models <- function(data) {
   stratified.adjusted.se <- temp[,'se(coef)'][c('treat')]
   
   # Weighted (IPTW) 
-  temp <- summary(survival::coxph(Surv(surv.time, surv.status) ~ treat, weight = weight, data = o.data))$coefficients
+  temp <- summary(survival::coxph(Surv(surv.time, surv.status) ~ treat, weights = o.data$weight, data = o.data))$coefficients
   weight.theta <- temp[,'coef']
   weight.se <- temp[,'se(coef)']
   
   # Weighted–adjusted 
-  temp <- summary(survival::coxph(Surv(surv.time, surv.status) ~ x.1 + x.2 + x.3 + x.4 + x.5 + x.6 + treat, weight = weight, data = o.data))$coefficients
+  temp <- summary(survival::coxph(Surv(surv.time, surv.status) ~ x.1 + x.2 + x.3 + x.4 + x.5 + x.6 + treat, weights = o.data$weight, data = o.data))$coefficients
   weight.adjusted.theta <- temp[,'coef'][c('treat')]
   weight.adjusted.se <- temp[,'se(coef)'][c('treat')]
   

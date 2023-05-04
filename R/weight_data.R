@@ -3,6 +3,9 @@
 #' Produce a weighted data set
 #' @param o.data original sample
 #' @return A weighted data set
+#' @importFrom stats predict
+#' @importFrom stats binomial
+#' @importFrom stats glm
 #' @export
 
 weight_data <- function(o.data) {

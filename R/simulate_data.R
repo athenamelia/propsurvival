@@ -3,6 +3,8 @@
 #' Simulate a survival data set
 #' @param beta0 different levels for covariates imbalance
 #' @return A simulated dataset with binary observed covariates, treatment, event time and indicator for 1000 subjects
+#' @importFrom stats rbinom
+#' @importFrom stats runif
 #' @export
 
 simulate_data <- function(beta0 = -3.45){
@@ -61,10 +63,9 @@ simulate_data <- function(beta0 = -3.45){
   surv.time <- (-log(ranu)/(lambda*exp(linpred)))^(1/nu)
   
   # Survival times were right censored using a U(0, 15)
-  # which led to approximately 40% censored observations
   cens.time <- runif(N,min=0,max=15)
   surv.status <- as.numeric(surv.time <= cens.time)
-  sum(surv.status == 0) # should be 40%
+  sum(surv.status == 0) 
   
   ################################################################################
   

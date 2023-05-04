@@ -3,6 +3,10 @@
 #' Produce a 1:1 matched data set
 #' @param o.data original sample
 #' @return A 1:1 matched data set
+#' @importFrom stats glm
+#' @importFrom stats binomial
+#' @importFrom stats predict
+#' @importFrom stats sd
 #' @export
 
 match_data <- function(o.data) {
