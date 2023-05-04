@@ -1,6 +1,7 @@
 ## A Monte Carlo study on propensity score applied to survival data analysis
 
-Propensity score analysis are widely used in biomedical research to estimate treatment effect from survival data in observational studies. However, within the framework of popular proportional hazard models, the choice among marginal, stratified or adjusted models is not clearly defined. This report introduces an R package to conduct a Monte Carlo simulation study to compare the performance of different survival models to estimate treatment effects. In addition to the impact of matching, propensity score based weighting approach is also assessed. 
+  Propensity score analysis are widely used in biomedical research to estimate treatment effect from survival data in observational studies. However, within the framework of popular proportional hazard models, the choice among marginal, stratified or adjusted models is not clearly defined. This report introduces an R package to conduct a Monte Carlo simulation study to compare the performance of different survival models to estimate treatment effects. In addition to the impact of matching, propensity score based weighting approach is also assessed. 
+  
   Simulation results show that ignoring the paired structure of the data led to an increased test size due to an overestimated variance of the treatment effect. Among survival models considered, stratified models systematically showed poorer performance. In all cases, it is necessary to employ propensity score through matching or weighting to balance out confounders, hence obtaining an unbiased estimator of treatment effect.
 
 The `propsurvival` package includes functions:
