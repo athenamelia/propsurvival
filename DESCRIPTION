@@ -1,8 +1,7 @@
 Package: propsurvival
 Type: Package
 Title: A Monte Carlo study on propensity score applied to survival data analysis
-Authors@R: c(
-    person("Amelia", "Tran", , "tran26h@upenn.edu", c("aut")))
+Authors@R: person("Amelia", "Tran", email = "tran26h@upenn.edu", role = c("aut", "cre"))
 Version: 0.0.1.0
 RoxygenNote: 7.2.3
 Encoding: UTF-8
