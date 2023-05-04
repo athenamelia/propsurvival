@@ -6,7 +6,7 @@
 
 The `propsurvival` package includes functions:
 
-* `simulate_data.R`: simulate a data set consisting of binary observed covariates, treatment indicator, survival time and event indicator for 1000 subjects. Censoring rate is about $40\%$ by default. 
+* `simulate_data.R`: simulate a data set consisting of binary observed covariates, treatment indicator, survival time and event indicator for 1000 subjects. Censoring rate is about 40% by default. 
 
 * `match_data.R`: produce a 1:1 matched data set based on original sample
 
@@ -20,7 +20,7 @@ The `propsurvival` package includes functions:
 
 * `get_se.R`: obtain mean of estimated standard error of treatment effect estimates 
 
-* `get_ratio.R`: obtain SD$_\theta$/SE ratio
+* `get_ratio.R`: obtain SD/SE ratio
 
 * `get_bias.R`: obtain bias of treatment effect estimates
 
