@@ -24,6 +24,6 @@ The `propsurvival` package includes functions:
 
 * `get_bias.R`: obtain bias of treatment effect estimates
 
-* `get_mse.R`: obtain mean squared error over the 10,000 simulations
+* `get_mse.R`: obtain mean squared error over the all simulations
 
 * `get_testSize.R`: obtain percentage of simulated data set leading to incorrect rejection of $H_0$
