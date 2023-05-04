@@ -7,9 +7,9 @@
 
 get_sd <- function(results_list) {
   
-  theta.list <- results_list[c("crude.theta", "match.theta", "adjusted.theta",
-                               "adjusted.ps.theta", "match.adjusted.theta", 
-                               "stratified.theta", "stratified.adjusted.theta",
+  theta.list <- results_list[c("crude.theta", "match.theta", "match.robust.theta", 
+                               "adjusted.theta", "adjusted.ps.theta", "match.adjusted.theta", 
+                               "match.robust.adjusted.theta", "stratified.theta", "stratified.adjusted.theta",
                                "weight.theta", "weight.adjusted.theta")]
   
   sd <- unlist(lapply(theta.list, FUN = sd))

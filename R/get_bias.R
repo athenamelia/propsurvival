@@ -5,7 +5,7 @@
 #' @return theta bias
 #' @export
 
-get_se <- function(results_list, true_theta = log(1)) {
+get_bias <- function(results_list, true_theta = log(1)) {
   
   bias <- get_theta(results_list) - true_theta
   
