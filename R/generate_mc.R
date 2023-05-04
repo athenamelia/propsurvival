@@ -5,11 +5,11 @@
 #' @return Monte Carlo simulation estimates
 #' @export
 
-generate_mc <- function(num.iter = 10000) {
+generate_mc <- function(num.iter = 10000, beta0 = -3.45) {
   results = matrix(NA, num.iter, 22) # iterations x estimates
   for(iter in 1:num.iter){
     set.seed(iter) 
-    o.data <- simulate_data(beta0 = -3.45)
+    o.data <- simulate_data(beta0 = beta0)
     results[iter, ] <- unlist(fit_models(o.data))
   }
   
