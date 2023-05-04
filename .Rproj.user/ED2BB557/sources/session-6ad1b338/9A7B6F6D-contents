@@ -1,5 +1,0 @@
-Package: propsurvival
-Type: Package
-Title: A Monte Carlo study on propensity score applied to survival data analysis
-Version: 0.0.1.0
-RoxygenNote: 7.2.3
