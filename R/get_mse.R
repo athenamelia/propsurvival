@@ -14,7 +14,7 @@ get_mse <- function(results_list, true_theta = log(1)) {
   mse.calc <- function(x) mean((x - true_theta)^2)
   mse <- unlist(lapply(theta.list, FUN = mse.calc))
   
-  return(mse)
+  return(round(mse, 3)) 
 }
 
 

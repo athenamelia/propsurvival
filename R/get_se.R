@@ -14,5 +14,5 @@ get_se <- function(results_list) {
   
   se <- unlist(lapply(se.list, FUN = mean))
 
-  return(se)
+  return(round(se, 3))
 }

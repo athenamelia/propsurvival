@@ -25,5 +25,5 @@ get_testSize <- function(results_list, true_theta = log(1)) {
   get.test.size <- function(x) mean(x < 0.05)
   test.size <- lapply(pval, FUN = get.test.size) 
   test.size <- unlist(test.size)
-  return(test.size)
+  return(round(test.size, 3))
 }

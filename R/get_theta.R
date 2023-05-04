@@ -14,5 +14,5 @@ get_theta <- function(results_list) {
   
   theta <- unlist(lapply(theta.list, FUN = mean))
   
-  return(theta)
+  return(round(theta, 3))
 }

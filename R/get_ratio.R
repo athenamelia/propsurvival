@@ -10,5 +10,5 @@ get_ratio <- function(results_list) {
   se.list <- get_se(results_list)
   
   ratio <- sd.list/se.list
-  return(ratio)
+  return(round(ratio, 3))
 }

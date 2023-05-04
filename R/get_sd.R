@@ -14,5 +14,5 @@ get_sd <- function(results_list) {
   
   sd <- unlist(lapply(theta.list, FUN = sd))
   
-  return(sd)
+  return(round(sd, 3))
 }
