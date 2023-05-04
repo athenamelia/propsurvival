@@ -4,6 +4,8 @@
   
   Simulation results show that ignoring the paired structure of the data led to an increased test size due to an overestimated variance of the treatment effect. Among survival models considered, stratified models systematically showed poorer performance. In all cases, it is necessary to employ propensity score through matching or weighting to balance out confounders, hence obtaining an unbiased estimator of treatment effect.
 
+  This project was inspired by the paper "Propensity score applied to survival data analysis through proportional hazards models: a Monte Carlo study" by  Gayat et al (2012). In the paper, the authors examined the performance of PS adjustment and matching, but not PS weighting which is the extended work of this project. 
+  
 The `propsurvival` package includes functions:
 
 * `simulate_data.R`: simulate a data set consisting of binary observed covariates, treatment indicator, survival time and event indicator for 1000 subjects. Censoring rate is about 40% by default. 
@@ -24,6 +26,6 @@ The `propsurvival` package includes functions:
 
 * `get_bias.R`: obtain bias of treatment effect estimates
 
-* `get_mse.R`: obtain mean squared error over the 10,000 simulations
+* `get_mse.R`: obtain mean squared error over the all simulations
 
 * `get_testSize.R`: obtain percentage of simulated data set leading to incorrect rejection of $H_0$
