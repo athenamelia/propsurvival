@@ -10,6 +10,8 @@ generate_mc(num.iter = 10000, beta0 = -3.45, cores = 1)
 \item{num.iter}{number of iterations}
 
 \item{beta0}{for treatment effect generation; determines imbalance level}
+
+\item{cores}{the number of cores for parallelization}
 }
 \value{
 Monte Carlo simulation estimates
