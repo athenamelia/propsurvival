@@ -4,7 +4,7 @@
 \alias{generate_mc}
 \title{Generate Monte Carlo simulation}
 \usage{
-generate_mc(num.iter = 10000, beta0 = -3.45)
+generate_mc(num.iter = 10000, beta0 = -3.45, cores = 1)
 }
 \arguments{
 \item{num.iter}{number of iterations}
