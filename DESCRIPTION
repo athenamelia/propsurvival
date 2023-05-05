@@ -7,5 +7,5 @@ Encoding: UTF-8
 Description: The package conducts a monte carlo study on propensity score methods
   for censored data. Propensity score methods include adjustment, matching, and weighting.
 RoxygenNote: 7.2.3
-Imports: survival, MatchIt
+Imports: survival, MatchIt, stats
 License: MIT + file LICENSE
