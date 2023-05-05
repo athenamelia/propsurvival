@@ -8,11 +8,13 @@
   
 The `propsurvival` package includes functions:
 
-* `simulate_data.R`: simulate a data set consisting of binary observed covariates, treatment indicator, survival time and event indicator for 1000 subjects. Censoring rate is about 40% by default. 
+* `generate_mc.R`: conduct a monte carlo study and return results including estimates of theta and SE over 10,000 iterations for imbalance level II ($\beta_0 = -3.45$) by default. Users can change $\beta_0 = -1.28$ for imbalance level I setting. There is also an option to specify the number of cores for parallelization through parameter `cores`. By default, `cores` is 1. 
 
-* `match_data.R`: produce a 1:1 matched data set based on original sample
+* `simulate_data.R`: simulate a data set consisting of binary observed covariates, treatment indicator, survival time and event indicator for 1000 subjects. $\beta_0 = -3.45$ for imbalance level II by default. Users can change $\beta_0 = -1.28$ for imbalance level I setting.
 
-* `weight_data.R`: produce a PS weighted data set based on original sample
+* `match_data.R`: produce a matched data set with 1:1 matching algorithm without replacement. Treated patients were matched to the closest control within 0.2 SD of the logit of the estimated PS
+
+* `weight_data.R`: produce a PS weighted data set with inverse probability treatment weighting (IPTW)
 
 * `fit_models.R`: fit several survival models and return estimates
 
