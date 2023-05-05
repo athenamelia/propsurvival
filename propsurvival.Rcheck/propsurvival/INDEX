@@ -1,0 +1,12 @@
+fit_models              Model fitting
+generate_mc             Generate Monte Carlo simulation
+get_bias                Bias of theta
+get_mse                 MSE of theta
+get_ratio               Ratio of SD/SE
+get_sd                  SD theta
+get_se                  Estimated SE theta
+get_testSize            Test size
+get_theta               Mean theta
+match_data              Propensity score matching
+simulate_data           Data simulation
+weight_data             Propensity score weighting

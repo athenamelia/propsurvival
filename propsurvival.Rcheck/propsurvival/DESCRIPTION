@@ -1,0 +1,17 @@
+Package: propsurvival
+Type: Package
+Title: A Monte Carlo study on propensity score applied to survival data
+        analysis
+Authors@R: person("Amelia", "Tran", email = "tran26h@upenn.edu", role = c("aut", "cre"))
+Version: 0.0.1.0
+Encoding: UTF-8
+Description: The package conducts a monte carlo study on propensity score methods
+  for censored data. Propensity score methods include adjustment, matching, and weighting.
+RoxygenNote: 7.2.3
+Imports: survival, MatchIt, stats
+License: MIT + file LICENSE
+NeedsCompilation: no
+Packaged: 2023-05-05 02:17:17 UTC; ameliatran
+Author: Amelia Tran [aut, cre]
+Maintainer: Amelia Tran <tran26h@upenn.edu>
+Built: R 4.2.3; ; 2023-05-05 02:25:24 UTC; unix

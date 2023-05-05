@@ -1,0 +1,12 @@
+fit_models	fit_models
+generate_mc	generate_mc
+get_bias	get_bias
+get_mse	get_mse
+get_ratio	get_ratio
+get_sd	get_sd
+get_se	get_se
+get_testSize	get_testSize
+get_theta	get_theta
+match_data	match_data
+simulate_data	simulate_data
+weight_data	weight_data
